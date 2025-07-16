@@ -1478,6 +1478,24 @@ input, select, textarea {
 		margin-bottom: 0;
 	}
 
+	#logo img {
+  max-height: 180px;
+  height: auto;
+  width: auto;
+}
+
+@media (max-width: 768px) {
+  #logo img {
+    max-height: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  #logo img {
+    max-height: 60px;
+  }
+}
+
 /* Image */
 
 	.image {
