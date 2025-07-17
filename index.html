@@ -4,7 +4,36 @@
     <title>SPLICERA | AI-Powered Transformation & Copilot Workshops</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="description" content="SPLICERA delivers Copilot Studio workshops, intelligent automation strategy, and AI consulting to empower digital transformation." />
+    <meta name="keywords" content="Copilot Studio, AI Automation, Intelligent Workflows, Power Platform, Design Thinking, Agentic Modelling, SPLICERA" />
+    <meta name="author" content="SPLICERA" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .offering {
+            background: #f5f5f5;
+            border-radius: 6px;
+            padding: 1.5em;
+            margin-bottom: 1.5em;
+        }
+        .offering h3 {
+            margin-top: 0;
+        }
+        .offering span {
+            float: right;
+            color: #0066cc;
+        }
+		#hero .container {
+    	text-align: center;
+		}
+
+		#hero .actions {
+    	display: flex;
+    	justify-content: center;
+		}
+    </style>
 </head>
 <body class="homepage is-preload">
 <div id="page-wrapper">
@@ -12,10 +41,9 @@
     <!-- Header -->
     <section id="header">
         <div class="container">
-            <!-- Logo -->
             <h1 id="logo">
                 <a href="index.html">
-                    <img src="images/mainlogo.png" alt="SPLICERA" />
+                    <img src="images/mainlogo.png" alt="SPLICERA logo" style="max-height: 180px;" />
                 </a>
             </h1>
             <p>Empowering business through AI, Copilot Studio, and intelligent automation.</p>
@@ -24,12 +52,23 @@
             <nav id="nav">
                 <ul>
                     <li><a class="icon solid fa-home" href="index.html"><span>Home</span></a></li>
-                    <li><a class="icon solid fa-laptop" href="#"><span>Copilot Studio</span></a></li>
-                    <li><a class="icon solid fa-cogs" href="#"><span>Agentic Modelling</span></a></li>
-                    <li><a class="icon solid fa-user" href="#"><span>Design Led Thinking</span></a></li>
+                    <li><a class="icon solid fa-laptop" href="#copilot"><span>Copilot Studio</span></a></li>
+                    <li><a class="icon solid fa-cogs" href="#agentic"><span>Agentic Modelling</span></a></li>
+                    <li><a class="icon solid fa-user" href="#design"><span>Design Led Thinking</span></a></li>
                     <li><a class="icon solid fa-envelope" href="#footer"><span>Contact</span></a></li>
                 </ul>
             </nav>
+        </div>
+    </section>
+
+    <!-- Hero -->
+    <section id="hero" class="wrapper style1">
+        <div class="container">
+            <h2>Transform Your Workflow with AI + Copilot Studio</h2>
+            <h1>Fast-track automation, empower your teams, and unlock ROI with SPLICERA’s tailored workshops and strategic reviews.</p>
+            <ul class="actions">
+                <li><a href="#features" class="button primary">Explore Our Offerings</a></li>
+            </ul>
         </div>
     </section>
 
@@ -37,88 +76,95 @@
     <section id="features">
         <div class="container">
             <header>
-                <h2>Modernize your business processes with <strong>SPLICERA</strong></h2>
+                <h2>Explore our core offerings at <strong>SPLICERA</strong></h2>
             </header>
             <div class="row aln-center">
                 <div class="col-4 col-6-medium col-12-small">
                     <section>
-                        <a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+                        <a href="#copilot" class="image featured"><img src="images/pic01.jpg" alt="Copilot Studio" /></a>
                         <header>
-                            <h3>Copilot Studio Workshops</h3>
+                            <h3><a href="#copilot">Copilot Studio</a></h3>
                         </header>
-                        <p>Our immersive, hands-on sessions teach teams how to create intelligent, agentic workflows using Copilot Studio. Drive immediate business impact with automation designed by you.</p>
+                        <p>Workshops and events designed to empower your teams with intelligent automation using Copilot Studio.</p>
                     </section>
                 </div>
                 <div class="col-4 col-6-medium col-12-small">
                     <section>
-                        <a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+                        <a href="#agentic" class="image featured"><img src="images/pic02.jpg" alt="Agentic Modelling" /></a>
                         <header>
-                            <h3>AI-Powered Transformation</h3>
+                            <h3><a href="#agentic">Agentic Modelling</a></h3>
                         </header>
-                        <p>We help companies adopt AI with confidence. From Power Platform integration to custom solutions, our experts ensure your digital transformation aligns with your strategic goals.</p>
+                        <p>Review your business processes and identify areas for automation and improvement using AI.</p>
                     </section>
                 </div>
                 <div class="col-4 col-6-medium col-12-small">
                     <section>
-                        <a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+                        <a href="#design" class="image featured"><img src="images/pic03.jpg" alt="Design Led Thinking" /></a>
                         <header>
-                            <h3>Consulting & Implementation</h3>
+                            <h3><a href="#design">Design Led Thinking</a></h3>
                         </header>
-                        <p>SPLICERA delivers tailored consulting and implementation reviews, ensuring your automation efforts are practical, scalable, and deliver measurable ROI.</p>
+                        <p>Empathy-driven workshops that align automation with real-world user needs and business goals.</p>
                     </section>
-                </div>
-                <div class="col-12">
-                    <ul class="actions">
-                        <li><a href="#" class="button icon solid fa-file">Learn More</a></li>
-                    </ul>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Banner -->
-    <section id="banner">
-        <div class="container">
-            <p>Unlock efficiency, innovation, and growth with <strong>AI-driven solutions</strong>.</p>
         </div>
     </section>
 
     <!-- Main -->
-<section id="main">
-    <div class="container">
-        <div class="row">
+    <section id="main">
+        <div class="container">
+            <div class="row">
+                <div id="content" class="col-12">
 
-            <!-- Content -->
-            <div id="content" class="col-12">
-                <article class="box post">
-                    <header>
-                        <h2><a href="#">Why Copilot Studio is a game-changer for business automation</a></h2>
-                    </header>
-                    <a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-                    <h3>Transform with purpose</h3>
-                    <p>At SPLICERA, we believe that intelligent automation isn't just about efficiency — it's about enabling innovation and empowering people. Our Copilot Studio workshops help teams build practical solutions that automate tedious tasks, improve accuracy, and increase agility.</p>
-                    <ul class="actions">
-                        <li><a href="#" class="button icon solid fa-file">Continue Reading</a></li>
-                    </ul>
-                </article>
+                    <!-- Copilot Studio -->
+                    <article id="copilot" class="box post">
+                        <header>
+                            <h2>Copilot Studio: Accelerated Automation by Design</h2>
+                        </header>
+                        <p>Equip your teams with hands-on skills in Microsoft Copilot Studio. Choose from our three modular engagements:</p>
 
-                <article class="box post">
-                    <header>
-                        <h2><a href="#">Driving ROI through AI implementation reviews</a></h2>
-                    </header>
-                    <a href="#" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
-                    <h3>Alignment. Strategy. Impact.</h3>
-                    <p>Our implementation reviews ensure your AI investments deliver real value. We assess systems, optimize workflows, and identify automation opportunities to reduce costs and enhance performance — all while aligning with your business objectives.</p>
-                    <ul class="actions">
-                        <li><a href="#" class="button icon solid fa-file">Continue Reading</a></li>
-                    </ul>
-                </article>
+                        <section class="offering">
+                            <h3>🛠 Copilot Studio Workshop (1 day) <span>£2,450</span></h3>
+                            <p>Interactive, hands on remote workshop for up to 8 participants. Learn how to build, deploy, and manage intelligent flows and bots tailored to your internal processes.</p>
+                        </section>
+
+                        <section class="offering">
+                            <h3>🚀 Copilot Studio Hackathon (2 days)<span>£6,750</span></h3>
+                            <p>2-day immersive event. Build real apps and agentic flows with guidance. Perfect for innovation weeks or internal training days.</p>
+                        </section>
+
+                        <section class="offering">
+                            <h3>🔐 Copilot Studio Security Workshop (1 day) <span>£3,450</span></h3>
+                            <p>Explore Copilot Studio Governance over 2 days covering secure architecture, data policies, and best practices.</p>
+                        </section>
+                    </article>
+
+                    <!-- Agentic Modelling -->
+                    <article id="agentic" class="box post">
+                        <header>
+                            <h2>Agentic Modelling: Find Automation Gold</h2>
+                        </header>
+                        <section class="offering">
+                            <h3>📋 Process Assessment & AI Opportunity Review (4 days) <span>£12,950</span></h3>
+                            <p>We analyze your existing business processes and identify opportunities for Copilot Studio and AI-powered improvements. Deliverables include a visual opportunity map and prioritization matrix.</p>
+                        </section>
+                    </article>
+
+                    <!-- Design Thinking -->
+                    <article id="design" class="box post">
+                        <header>
+                            <h2>Design Led Thinking: Human-Centered Automation</h2>
+                        </header>
+                        <section class="offering">
+                            <h3>🎨 Design Led Thinking Workshop (3 days) <span>£8,450</span></h3>
+                            <p>This 1-day session takes your team through pain-point mapping, ideation, and rapid solution prototyping. Perfect for generating user-focused automation ideas that stick.</p>
+                        </section>
+                    </article>
+
+                </div>
             </div>
-
         </div>
-    </div>
-</section>
-
+    </section>
 
     <!-- Footer -->
     <section id="footer">
@@ -150,36 +196,15 @@
                 <div class="col-6 col-12-medium">
                     <section>
                         <p>We help you modernize your workflows, build internal AI capability, and create long-term automation strategies. From ideation to implementation, we're your partner in transformation.</p>
-                        <div class="row">
-                            <div class="col-6 col-12-small">
-                                <ul class="icons">
-                                    <li class="icon solid fa-home">
-                                        United Kingdom<br />
-                                    </li>
-                                    <li class="icon solid fa-envelope">
-                                        <a href="#">info@splicera.com</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-6 col-12-small">
-                                <ul class="icons">
-                                    <li class="icon brands fa-linkedin">
-                                        <a href="#">linkedin.com/company/splicera</a>
-                                    </li>
-                                    <li class="icon solid fa-globe">
-                                        <a href="http://www.splicera.com">splicera.com</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+                        <ul class="icons">
+                            <li class="icon solid fa-home">United Kingdom</li>
+                            <li class="icon solid fa-envelope"><a href="#">info@splicera.com</a></li>
+                            <li class="icon brands fa-linkedin"><a href="#">linkedin.com/company/splicera</a></li>
+                            <li class="icon solid fa-globe"><a href="http://www.splicera.com">splicera.com</a></li>
+                        </ul>
                     </section>
                 </div>
             </div>
-        </div>
-        <div id="copyright" class="container">
-            <ul class="links">
-                <li>&copy; SPLICERA. All rights reserved.</li><li>Design adapted from <a href="http://html5up.net">HTML5 UP</a></li>
-            </ul>
         </div>
     </section>
 
