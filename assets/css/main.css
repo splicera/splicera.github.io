@@ -2721,3 +2721,21 @@ input, select, textarea {
 				}
 
 	}
+	.logo-text {
+  font-family: 'Arial', sans-serif; /* Use your brand font if available */
+  font-size: 2.5rem; /* Matches visual impact of original logo */
+  font-weight: bold;
+  text-decoration: none;
+  color: rgb(188, 17, 17); /* Main part: SPLIC */
+}
+
+.logo-text .highlight {
+  color: #3a2ca5; /* era in the favicon's cyan-teal */
+}
+
+/* Optional: make it responsive */
+@media (max-width: 600px) {
+  .logo-text {
+    font-size: 1.8rem;
+  }
+}
