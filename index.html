@@ -1,18 +1,20 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
     <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://splicera.github.io/" />
 
     <!-- 🔹 Page Title -->
     <title>SPLICERA | AI Automation & Copilot Studio Training for Digital Transformation</title>
 
-    <!-- 🔹 Meta Description (used in search results) -->
-    <meta name="description" content="SPLICERA delivers expert-led Copilot Studio workshops, AI-powered automation strategy, and training for digital transformation on Microsoft's Power Platform." />
+    <!-- 🔹 Meta Description (optimized length) -->
+    <meta name="description" content="Expert-led Copilot Studio workshops, AI automation strategy, and Power Platform training. Transform your business with SPLICERA's digital transformation solutions." />
 
-    <!-- 🔹 Author & Keywords (keywords are less useful today but still fine to include) -->
+    <!-- 🔹 Author & Keywords -->
     <meta name="author" content="SPLICERA" />
-    <meta name="keywords" content="Copilot Studio, AI Automation, Power Platform, Microsoft Copilot Training, Intelligent Workflows, Agentic Modelling, Design Thinking, SPLICERA, Digital Transformation Workshops, AI Consulting" />
+    <meta name="keywords" content="Copilot Studio, AI Automation, Power Platform, Microsoft Copilot Training, Intelligent Workflows, Agentic Modelling, Design Thinking, SPLICERA, Digital Transformation Workshops, AI Consulting, UK AI Training, Business Process Automation" />
 
     <!-- 🔹 Favicon and App Icons -->
     <link rel="icon" type="image/png" href="/favicon.ico" sizes="96x96" />
@@ -21,7 +23,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
 
-    <!-- 🔹 Open Graph / Social Sharing (Facebook, LinkedIn, etc.) -->
+    <!-- 🔹 Open Graph / Social Sharing -->
     <meta property="og:title" content="SPLICERA | Copilot Studio Workshops & AI-Powered Workflow Training" />
     <meta property="og:description" content="Unlock intelligent automation with SPLICERA's AI consulting and Microsoft Copilot Studio training. Build agentic models and streamline digital transformation." />
     <meta property="og:image" content="https://splicera.github.io/images/og-preview.png" />
@@ -34,15 +36,29 @@
     <meta name="twitter:title" content="SPLICERA | Copilot Studio & AI Training" />
     <meta name="twitter:description" content="AI automation, Power Platform strategy, and Copilot workshops for modern enterprises. Learn from the experts at SPLICERA." />
     <meta name="twitter:image" content="https://splicera.github.io/images/og-preview.png" />
-        <link rel="stylesheet" href="assets/css/main.css" />
-        <link rel="icon" type="image/png" href="/favicon.ico" sizes="96x96" />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <link rel="shortcut icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-        <link rel="manifest" href="/site.webmanifest" />
+    
+    <!-- 🔹 Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "SPLICERA Training Ltd",
+      "description": "Expert AI automation and Copilot Studio training for digital transformation",
+      "url": "https://splicera.github.io/",
+      "logo": "https://splicera.github.io/images/logo1.svg",
+      "email": "info@splicera.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "GB"
+      },
+      "areaServed": "Worldwide",
+      "serviceType": ["AI Automation Training", "Copilot Studio Workshops", "Business Process Automation", "Agentic Modelling", "Design Thinking Workshops"],
+      "priceRange": "£2,950 - £55,000"
+    }
+    </script>
 
+    <link rel="stylesheet" href="assets/css/main.css" />
 
-	
     <style>
         html {
             scroll-behavior: smooth;
@@ -80,6 +96,55 @@
             text-decoration: none;
             font-weight: bold;
         }
+        .book-button a:hover {
+            background: #0052a3;
+        }
+        .testimonials {
+            background: #f9f9f9;
+            padding: 3em 0;
+            margin: 3em 0;
+            text-align: center;
+        }
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2em;
+            margin-top: 2em;
+        }
+        .testimonial-card {
+            background: white;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .testimonial-placeholder {
+            color: #999;
+            font-style: italic;
+            font-size: 1.1em;
+            padding: 3em 1em;
+        }
+        .faq-section {
+            margin: 3em 0;
+        }
+        .faq-item {
+            background: #f9f9f9;
+            padding: 1.5em;
+            margin-bottom: 1em;
+            border-radius: 6px;
+            border-left: 4px solid #0066cc;
+        }
+        .faq-item h4 {
+            margin-top: 0;
+            color: #0066cc;
+        }
+        .intro-content {
+            line-height: 1.8;
+            margin: 2em 0;
+            font-size: 1.05em;
+        }
+        .intro-content p {
+            margin-bottom: 1.2em;
+        }
     </style>
 </head>
 <body class="homepage is-preload">
@@ -103,6 +168,8 @@
                     <li><a class="icon solid fa-laptop" href="#copilot"><span>Copilot Studio</span></a></li>
                     <li><a class="icon solid fa-cogs" href="#agentic"><span>Agentic Modelling</span></a></li>
                     <li><a class="icon solid fa-user" href="#design"><span>Design Led Thinking</span></a></li>
+                    <li><a class="icon solid fa-star" href="#testimonials"><span>Testimonials</span></a></li>
+                    <li><a class="icon solid fa-question-circle" href="#faq"><span>FAQ</span></a></li>
                 </ul>
             </nav>
         </div>
@@ -110,14 +177,16 @@
 
     <!-- Hero -->
     <section id="hero" class="wrapper style1">
-        <div class="container">
+        <div class="container" style="text-align: center; margin-bottom: 2em;">
             <h2>Transform Your Workflow with AI + Copilot Studio</h2>
             <h1>Fast-track automation, empower your teams, and unlock ROI with SPLICERA’s tailored workshops and strategic reviews.</h1>
             <ul class="actions">
                 <li><a href="#features" class="button primary">Explore Our Offerings</a></li>
             </ul>
         </div>
+        
     </section>
+    
 
     <!-- Features -->
     <section id="features">
@@ -148,7 +217,9 @@
                     </section>
                 </div>
             </div>
+            
         </div>
+        
     </section>
 
     <!-- Main -->
@@ -162,26 +233,26 @@
             <header>
                 <h2>Copilot Studio: AI Powered Workflow Acceleration</h2>
             </header>
-            <p>Choose from two high-impact engagements, designed to unlock fast ROI through automation, co-creation, and strategic alignment:</p>
+            <p>Choose from two high-impact engagements, designed to unlock fast ROI through automation, co-creation, and strategic alignment. Our Copilot Studio training helps organizations across finance, healthcare, retail, and professional services implement conversational AI solutions that reduce manual workload and improve customer engagement.</p>
 
             <section class="offering">
                 <h3>🟦 Tier 1: Copilot Readiness Workshop 
                 <span>£2,950 / €3,450 / $3,700</span>
                 </h3>
-                <p>1-day workshop for up to 8 participants. Includes Copilot Studio walkthrough, live use-case mapping, and a summary report.</p>
+                <p>1-day workshop for up to 8 participants. Includes Copilot Studio walkthrough, live use-case mapping, and a summary report. Perfect for teams new to AI automation or evaluating Microsoft Power Platform capabilities.</p>
             </section>
 
             <section class="offering">
                 <h3>🟨 Tier 2: AI Workflow Sprint 
                 <span>£5,950 / €6,950 / $7,450</span>
                 </h3>
-                <p>A 2-day immersive sprint to build a working prototype using Copilot Studio. Includes live discovery, hands-on co-building, and a roadmap for scaling. Ideal for teams with a clear pain point or opportunity to test.</p>
+                <p>A 2-day immersive sprint to build a working prototype using Copilot Studio. Includes live discovery, hands-on co-building, and a roadmap for scaling. Ideal for teams with a clear pain point or opportunity to test. Walk away with a functional automation solution and implementation strategy.</p>
             </section>
             </article>
 
             <!-- Call to Action -->
             <div class="book-button">
-            <a href="mailto:info@splicera.com?subject=Information%20Request">✉️ Get in Touch</a>
+            <a href="mailto:info@splicera.com?subject=Copilot%20Studio%20Workshop%20Inquiry">✉️ Book Your Copilot Workshop</a>
             </div>
 
             <!-- Agentic Modelling -->
@@ -189,25 +260,26 @@
             <header>
                 <h2>Agentic Modelling: Automation by Design</h2>
             </header>
+            <p>Our agentic modelling services help enterprises map complex business processes and identify strategic automation opportunities. Through comprehensive assessment and planning, we develop customized roadmaps that align AI implementation with your organizational goals, compliance requirements, and existing technology infrastructure.</p>
 
             <section class="offering">
                 <h3>📋 Tier 1: Process Intelligence Review 
                 <span>£14,950–£19,950 / €17,500–€23,350 / $18,700–$25,000</span>
                 </h3>
-                <p>2–3 week engagement with in-depth workshops, process mapping, and automation assessments. Ideal for medium to large teams initiating enterprise-scale automation efforts.</p>
+                <p>2–3 week engagement with in-depth workshops, process mapping, and automation assessments. Ideal for medium to large teams initiating enterprise-scale automation efforts. Includes stakeholder interviews, workflow analysis, and prioritized automation recommendations with estimated ROI calculations.</p>
             </section>
 
             <section class="offering">
                 <h3>⚙️ Tier 2: Enterprise Automation Roadmap 
                 <span>£45,000–£55,000 / €52,500–€64,000 / $56,250–$68,750</span>
                 </h3>
-                <p>2–3 month engagement delivering a comprehensive automation strategy, ROI justification, and executive-ready planning documents. Tailored for enterprise deployment, aligned with internal CoE or transformation teams.</p>
+                <p>2–3 month engagement delivering a comprehensive automation strategy, ROI justification, and executive-ready planning documents. Tailored for enterprise deployment, aligned with internal CoE or transformation teams. Includes governance frameworks, change management strategies, training programs, and multi-phase implementation timelines.</p>
             </section>
             </article>
 
             <!-- Call to Action -->
             <div class="book-button">
-            <a href="mailto:info@splicera.com?subject=Information%20Request">✉️ Get in Touch</a>
+            <a href="mailto:info@splicera.com?subject=Agentic%20Modelling%20Inquiry">✉️ Start Your Automation Journey</a>
             </div>
 
             <!-- Design Led Thinking -->
@@ -215,19 +287,83 @@
             <header>
                 <h2>Design Led Thinking: Human-Centered Automation</h2>
             </header>
+            <p>Successful automation isn't just about technology—it's about people. Our design-led approach ensures that AI solutions enhance employee experience and customer satisfaction. Through empathy mapping, user journey analysis, and collaborative ideation, we help you identify automation opportunities that your teams will actually embrace and use.</p>
 
             <section class="offering">
                 <h3>🎨 Tier 1: Ideation Workshop 
                 <span>£2,950 / €3,450 / $3,700</span>
                 </h3>
-                <p>1-day workshop to identify and prioritize automation ideas from a user-centered lens.</p>
+                <p>1-day workshop to identify and prioritize automation ideas from a user-centered lens. Includes design thinking exercises, persona development, journey mapping, and a prioritized backlog of automation opportunities ranked by user impact and implementation feasibility.</p>
             </section>
             </article>
 
             <!-- Call to Action -->
             <div class="book-button">
-            <a href="mailto:info@splicera.com?subject=Information%20Request">✉️ Get in Touch</a>
+            <a href="mailto:info@splicera.com?subject=Design%20Thinking%20Workshop%20Inquiry">✉️ Schedule Your Workshop</a>
             </div>
+
+            <!-- Testimonials Section -->
+            <section id="testimonials" class="testimonials">
+                <div class="container">
+                    <header style="text-align: center; margin-bottom: 2em;">
+                        <h2>What Our Clients Say</h2>
+                    </header>
+                    <div class="testimonial-placeholder">
+                        <p>✨ Coming Soon ✨</p>
+                        <p style="font-size: 0.9em; margin-top: 1em;">Interested in sharing your SPLICERA experience? <a href="mailto:info@splicera.com?subject=Testimonial">Contact us</a></p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FAQ Section -->
+            <section id="faq" class="faq-section">
+                <div class="container">
+                    <header style="text-align: center; margin-bottom: 2em;">
+                        <h2>Frequently Asked Questions</h2>
+                        <p>Everything you need to know about SPLICERA's training and consulting services</p>
+                    </header>
+
+                    <div class="faq-item">
+                        <h4>What is Microsoft Copilot Studio?</h4>
+                        <p>Microsoft Copilot Studio is a low-code platform for building conversational AI agents and automating workflows. It enables businesses to create intelligent chatbots, automate repetitive tasks, and integrate AI capabilities across Microsoft 365, Teams, and other enterprise systems without extensive programming knowledge.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h4>Who should attend SPLICERA workshops?</h4>
+                        <p>Our workshops are designed for business analysts, IT professionals, operations managers, digital transformation leads, and anyone responsible for process improvement or automation initiatives. No prior AI or coding experience is required for Tier 1 workshops, though basic familiarity with business processes is helpful.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h4>Are workshops delivered remotely or in-person?</h4>
+                        <p>All workshops are delivered remotely by default, serving clients worldwide. In-person delivery is available upon request and may incur additional travel and accommodation costs. Remote sessions are conducted via your preferred virtual meeting platform (Teams, Zoom, etc.).</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h4>What technology do we need to participate?</h4>
+                        <p>Participants need a computer with internet access, a virtual meeting platform (Microsoft Teams, Zoom, or similar), and ideally access to Microsoft Power Platform or Copilot Studio for hands-on workshops. We'll provide detailed technical requirements upon booking.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h4>How quickly can we see ROI from automation?</h4>
+                        <p>Many clients see initial time savings within weeks of implementing their first Copilot Studio agent. Comprehensive automation initiatives typically show measurable ROI within 3-6 months, depending on scope and complexity. Our workshops include ROI calculation frameworks to help you track and measure success.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h4>What happens after the workshop?</h4>
+                        <p>You'll receive comprehensive documentation including workshop summaries, implementation roadmaps, and recommended next steps. Follow-up support options are available, and we can discuss ongoing consulting or additional training as your automation journey progresses.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h4>Can workshops be customized for our industry?</h4>
+                        <p>Absolutely. We tailor all workshops to your specific industry context, whether you're in finance, healthcare, retail, manufacturing, or professional services. During pre-workshop planning calls, we gather information about your unique challenges and customize examples and use cases accordingly.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h4>What's your cancellation policy?</h4>
+                        <p>Workshops must be booked at least 7 days in advance. Cancellations made more than 72 hours before the scheduled workshop receive a full refund. Cancellations within 72 hours may be subject to a 50% fee. We're happy to reschedule at no additional charge when possible.</p>
+                    </div>
+                </div>
+            </section>
 
             <!-- Currency Disclaimer -->
             <p style="font-size: 0.9rem; color: #777; margin-top: 2rem;">
