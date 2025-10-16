@@ -1,62 +1,17 @@
 <!DOCTYPE HTML>
 <html lang="en">
-    <head>
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://splicera.github.io/" />
 
-    <!-- 🔹 Page Title -->
-    <title>SPLICERA | Copilot Studio Readiness Workshop - Find Your First 3 Automation Wins</title>
-
-    <!-- 🔹 Meta Description (optimized length) -->
-    <meta name="description" content="One-day Copilot Studio Readiness Workshop. Identify your first 3 automation wins and receive a custom ROI calculator. Led by experts with 10+ years in AI automation." />
-
-    <!-- 🔹 Author & Keywords -->
+    <title>SPLICERA | LLM for Students Workshop - Learn Conversational AI as a Learning Partner</title>
+    <meta name="description" content="3-hour workshop teaching students to use ChatGPT ethically for critical thinking and academic writing. Expert-led sessions for schools and universities." />
     <meta name="author" content="SPLICERA" />
-    <meta name="keywords" content="Copilot Studio, AI Automation, Power Platform, Microsoft Copilot Training, Intelligent Workflows, SPLICERA, Digital Transformation Workshops, AI Consulting, UK AI Training, Business Process Automation" />
+    <meta name="keywords" content="ChatGPT for Students, AI Education, Academic Integrity, Critical Thinking, Student Workshops, AI Learning Tools, Ethical AI Use, University Training, School Workshops" />
 
-    <!-- 🔹 Favicon and App Icons -->
     <link rel="icon" type="image/png" href="/favicon.ico" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-
-    <!-- 🔹 Open Graph / Social Sharing -->
-    <meta property="og:title" content="SPLICERA | Copilot Studio Readiness Workshop" />
-    <meta property="og:description" content="One-day workshop to identify your first 3 automation wins using Microsoft Copilot Studio. Get tangible deliverables and a clear roadmap." />
-    <meta property="og:image" content="https://splicera.github.io/images/og-preview.png" />
-    <meta property="og:url" content="https://splicera.github.io/" />
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="SPLICERA" />
-
-    <!-- 🔹 Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="SPLICERA | Copilot Studio Readiness Workshop" />
-    <meta name="twitter:description" content="One-day workshop to identify your first 3 automation wins. Expert-led, tangible deliverables included." />
-    <meta name="twitter:image" content="https://splicera.github.io/images/og-preview.png" />
-    
-    <!-- 🔹 Schema.org Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "name": "SPLICERA Training Ltd",
-      "description": "Expert AI automation and Copilot Studio training for digital transformation",
-      "url": "https://splicera.github.io/",
-      "logo": "https://splicera.github.io/images/logo1.svg",
-      "email": "info@splicera.com",
-      "address": {
-        "@type": "PostalAddress",
-        "addressCountry": "GB"
-      },
-      "areaServed": "Worldwide",
-      "serviceType": ["AI Automation Training", "Copilot Studio Workshops", "Business Process Automation"],
-      "priceRange": "£2,950"
-    }
-    </script>
-
     <link rel="stylesheet" href="assets/css/main.css" />
 
     <style>
@@ -66,6 +21,7 @@
             --muted: #6c7076;
             --card: #ffffff;
             --bg: #f6f8fb;
+            --accent: #00c853;
             --radius: 10px;
             font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
         }
@@ -74,11 +30,22 @@
             scroll-behavior: smooth;
         }
         
+        body {
+            margin: 0;
+            padding: 0;
+            background: var(--bg);
+            color: #333;
+        }
+        
         /* Header Styles */
         header {
             background: #fff;
             border-bottom: 1px solid #e6e9ef;
             padding: 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
         }
         
         .topbar {
@@ -92,31 +59,28 @@
             padding-right: 1.5rem;
         }
         
-       .brand {
-    display: flex;           /* put logo and text side by side */
-    align-items: center;     /* vertically center the logo and text */
-    gap: 12px;               /* space between logo and text, adjust as needed */
-}
-
-.brand img {
-    height: 50px;           /* control the logo size */
-    width: auto;
-}
-
-.brand-text h2 {
-    margin: 0;              /* remove default margin */
-    font-size: 1.5rem;      /* adjust as needed */
-}
-
-.brand-text .tagline {
-    margin: 0;
-    font-size: 0.9rem;
-    line-height: 1.2;       /* control vertical spacing between lines */
-}
-
-        
-        header nav {
+        .brand {
             display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .brand img {
+            height: 50px;
+            width: auto;
+        }
+
+        .brand-text h2 {
+            margin: 0;
+            font-size: 1.5rem;
+            color: var(--navy);
+        }
+
+        .brand-text .tagline {
+            margin: 0;
+            font-size: 0.9rem;
+            color: var(--muted);
+            line-height: 1.2;
         }
         
         header nav ul {
@@ -128,24 +92,10 @@
             align-items: center;
         }
         
-        header nav ul li {
-            margin: 0;
-        }
-        
         header nav a {
             color: #111;
             text-decoration: none;
             font-size: 0.95rem;
-        }
-        
-        header nav a.link-inline {
-            border-bottom: 1px dashed rgba(11, 105, 214, 0.16);
-            padding-bottom: 2px;
-        }
-        
-        header nav a.link-inline:hover {
-            border-bottom-color: var(--blue);
-            color: var(--blue);
         }
         
         header nav a.button {
@@ -154,14 +104,301 @@
             padding: 10px 18px;
             border-radius: 8px;
             font-weight: 600;
-            border: none;
         }
         
         header nav a.button:hover {
             background: #0052a3;
         }
         
-        /* Mobile Navigation */
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #0066cc 0%, #0052a3 100%);
+            color: white;
+            padding: 4em 1.5em;
+            text-align: center;
+        }
+        
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .hero h1 {
+            font-size: 2.5em;
+            margin: 0 0 0.5em 0;
+            line-height: 1.2;
+            color: #ffffff !important;
+        }
+        
+        .hero .subtitle {
+            font-size: 1.3em;
+            margin-bottom: 2em;
+            opacity: 0.95;
+            line-height: 1.4;
+        }
+        
+        .hero-badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            padding: 0.5em 1em;
+            border-radius: 20px;
+            font-size: 0.9em;
+            margin-bottom: 1.5em;
+        }
+        
+        /* Main Offer Box */
+        .offer-box {
+            background: white;
+            border-radius: 12px;
+            padding: 2.5em;
+            margin: -3em auto 3em auto;
+            max-width: 800px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+            position: relative;
+        }
+        
+        .offer-box h2 {
+            color: var(--navy);
+            margin-top: 0;
+            font-size: 1.8em;
+        }
+        
+        .price-tag {
+            font-size: 3em;
+            font-weight: bold;
+            color: var(--blue);
+            margin: 0.5em 0;
+        }
+        
+        .price-details {
+            color: var(--muted);
+            font-size: 0.95em;
+            margin-bottom: 2em;
+        }
+        
+        .deliverables {
+            background: #f9f9f9;
+            border-radius: 8px;
+            padding: 2em;
+            margin: 2em 0;
+            text-align: left;
+        }
+        
+        .deliverables h3 {
+            color: var(--blue);
+            margin-top: 0;
+            text-align: center;
+            font-size: 1.3em;
+        }
+        
+        .deliverables ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .deliverables li {
+            padding: 1em 0;
+            border-bottom: 1px solid #e0e0e0;
+            position: relative;
+            padding-left: 2.5em;
+        }
+        
+        .deliverables li:before {
+            content: "✓";
+            color: var(--accent);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+            font-size: 1.5em;
+        }
+        
+        .deliverables li:last-child {
+            border-bottom: none;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: var(--blue);
+            color: white;
+            padding: 1em 3em;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-top: 1em;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(0,102,204,0.3);
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,102,204,0.5);
+            background: #0052a3;
+        }
+        
+        /* Benefits Section */
+        .benefits {
+            max-width: 1200px;
+            margin: 4em auto;
+            padding: 0 1.5em;
+        }
+        
+        .benefits h2 {
+            text-align: center;
+            color: var(--navy);
+            font-size: 2em;
+            margin-bottom: 2em;
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2em;
+        }
+        
+        .benefit-card {
+            background: white;
+            padding: 2em;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+        
+        .benefit-icon {
+            font-size: 3em;
+            margin-bottom: 0.5em;
+        }
+        
+        .benefit-card h3 {
+            color: var(--navy);
+            margin: 0.5em 0;
+        }
+        
+        .benefit-card p {
+            color: var(--muted);
+            line-height: 1.6;
+        }
+        
+        /* Workshop Structure */
+        .structure {
+            background: var(--navy);
+            color: white;
+            padding: 4em 1.5em;
+            margin: 4em 0;
+        }
+        
+        .structure-content {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .structure h2 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 2em;
+        }
+        
+        .lab-item {
+            background: rgba(255,255,255,0.1);
+            padding: 1.5em;
+            border-radius: 8px;
+            margin-bottom: 1.5em;
+            border-left: 4px solid var(--accent);
+        }
+        
+        .lab-item h4 {
+            margin-top: 0;
+            color: white;
+            font-size: 1.2em;
+        }
+        
+        .lab-item p {
+            margin-bottom: 0;
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+        
+        /* Enterprise Services */
+        .enterprise {
+            max-width: 1200px;
+            margin: 4em auto;
+            padding: 0 1.5em;
+        }
+        
+        .enterprise-header {
+            text-align: center;
+            margin-bottom: 3em;
+        }
+        
+        .enterprise-header h2 {
+            color: var(--navy);
+            font-size: 1.8em;
+            margin-bottom: 0.5em;
+        }
+        
+        .enterprise-header p {
+            color: var(--muted);
+            font-size: 1.1em;
+        }
+        
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2em;
+        }
+        
+        .service-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            transition: transform 0.3s;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+        
+        .service-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .service-content {
+            padding: 2em;
+        }
+        
+        .service-content h3 {
+            color: var(--navy);
+            margin-top: 0;
+        }
+        
+        .service-content p {
+            color: var(--muted);
+            line-height: 1.6;
+        }
+        
+        /* Footer */
+        footer {
+            background: #222;
+            color: #ccc;
+            padding: 3em 1.5em;
+            text-align: center;
+        }
+        
+        footer a {
+            color: #ccc;
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            color: white;
+        }
+        
+        /* Mobile Responsive */
         @media (max-width: 768px) {
             .topbar {
                 flex-direction: column;
@@ -169,482 +406,200 @@
                 align-items: flex-start;
             }
             
-            header nav {
-                width: 100%;
-            }
-            
             header nav ul {
                 flex-wrap: wrap;
-                gap: 12px;
             }
-        }
-        
-        .highlight-box {
-            background: linear-gradient(135deg, #0066cc 0%, #0052a3 100%);
-            color: white;
-            border-radius: 12px;
-            padding: 3em 2em;
-            margin: 3em 0;
-            text-align: center;
-            box-shadow: 0 4px 20px rgba(0,102,204,0.3);
-        }
-        
-        .highlight-box h2 {
-            color: white;
-            margin-top: 0;
-            font-size: 2em;
-        }
-        
-        .highlight-box .price {
-            font-size: 2.5em;
-            font-weight: bold;
-            margin: 0.5em 0;
-        }
-        
-        .deliverables {
-            background: white;
-            color: #333;
-            border-radius: 8px;
-            padding: 2em;
-            margin: 2em auto;
-            max-width: 600px;
-            text-align: left;
-        }
-        
-        .deliverables h3 {
-            color: #0066cc;
-            margin-top: 0;
-            text-align: center;
-        }
-        
-        .deliverables ul {
-            list-style: none;
-            padding: 0;
-        }
-        
-        .deliverables ul li {
-            padding: 0.8em 0;
-            border-bottom: 1px solid #eee;
-            position: relative;
-            padding-left: 2em;
-        }
-        
-        .deliverables ul li:before {
-            content: "✓";
-            color: #0066cc;
-            font-weight: bold;
-            position: absolute;
-            left: 0;
-            font-size: 1.3em;
-        }
-        
-        .deliverables ul li:last-child {
-            border-bottom: none;
-        }
-        
-        .cta-button {
-            display: inline-block;
-            background: white;
-            color: #0066cc;
-            padding: 1em 3em;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 1.2em;
-            margin-top: 2em;
-            transition: all 0.3s;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-        }
-        
-        .cta-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
-            background: #f0f0f0;
-        }
-        
-        .expertise-section {
-            background: #f9f9f9;
-            padding: 3em 0;
-            margin: 3em 0;
-        }
-        
-        .expertise-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2em;
-            margin-top: 2em;
-        }
-        
-        .expertise-card {
-            background: white;
-            padding: 2em;
-            border-radius: 8px;
-            text-align: center;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
-        
-        .expertise-card .stat {
-            font-size: 3em;
-            font-weight: bold;
-            color: #0066cc;
-            margin: 0.2em 0;
-        }
-        
-        .expertise-card h4 {
-            margin: 0.5em 0;
-            color: #333;
-        }
-        
-        .process-steps {
-            margin: 3em 0;
-        }
-        
-        .step {
-            display: flex;
-            align-items: flex-start;
-            margin: 2em 0;
-            gap: 1.5em;
-        }
-        
-        .step-number {
-            background: #0066cc;
-            color: white;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5em;
-            font-weight: bold;
-            flex-shrink: 0;
-        }
-        
-        .step-content h4 {
-            margin-top: 0;
-            color: #0066cc;
-        }
-        
-        .faq-section {
-            margin: 3em 0;
-        }
-        
-        .faq-item {
-            background: #f9f9f9;
-            padding: 1.5em;
-            margin-bottom: 1em;
-            border-radius: 6px;
-            border-left: 4px solid #0066cc;
-        }
-        
-        .faq-item h4 {
-            margin-top: 0;
-            color: #0066cc;
-        }
-        
-        .secondary-services {
-            background: #f5f5f5;
-            padding: 2em;
-            border-radius: 8px;
-            margin: 3em 0;
-        }
-        
-        .secondary-services h3 {
-            text-align: center;
-            color: #0066cc;
-        }
-        
-        .service-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1.5em;
-            margin-top: 2em;
-        }
-        
-        .service-item {
-            background: white;
-            padding: 1.5em;
-            border-radius: 6px;
-        }
-        
-        .service-item h4 {
-            color: #0066cc;
-            margin-top: 0;
+            
+            .hero h1 {
+                font-size: 1.8em;
+            }
+            
+            .hero .subtitle {
+                font-size: 1.1em;
+            }
+            
+            .offer-box {
+                margin: -2em 1em 2em 1em;
+                padding: 1.5em;
+            }
+            
+            .price-tag {
+                font-size: 2.2em;
+            }
         }
     </style>
 </head>
-<body class="homepage is-preload">
-<div id="page-wrapper">
+<body>
 
-    <!-- Header -->
-    <header>
-        <div class="topbar">
-            <div class="brand">
-                <img src="images/logo1.svg" alt="SPLICERA logo" />
-                <div class="brand-text">
-                    <h2><strong>SPLICERA TRAINING LTD</strong></h2>
-                    <div class="tagline">AI Automation & Copilot Studio — Workshops & Strategy</div>
-                </div>
+<!-- Header -->
+<header>
+    <div class="topbar">
+        <div class="brand">
+            <img src="images/logo1.svg" alt="SPLICERA logo" />
+            <div class="brand-text">
+                <h2><strong>SPLICERA</strong></h2>
+                <div class="tagline">Learning Solutions</div>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="#offer" class="button">Book a Workshop</a></li>
-                    <li><a href="#features" class="link-inline">Services</a></li>
-                    <li><a href="#faq" class="link-inline">FAQ</a></li>
-                </ul>
-            </nav>
         </div>
-    </header>
+        <nav>
+            <ul>
+                <li><a href="#workshop" class="button">Book Workshop</a></li>
+                <li><a href="#enterprise">Enterprise Services</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
-    <!-- Hero -->
-    <section id="hero" class="wrapper style1">
-        <div class="container" style="text-align: center; margin-bottom: 2em;">
-            <p></p>
-            <h2>Find Your First Process Automation Win in Just One Day</h2>
-            <h1>The Copilot Studio Readiness Workshop helps your team identify quick-win automation opportunities and build a clear roadmap to ROI.</h1>
-            <ul class="actions">
-                <li><a href="#offer" class="button primary">See What's Included</a></li>
+<!-- Hero -->
+<section class="hero">
+    <div class="hero-content">
+        <div class="hero-badge">🎓 For Schools & Universities</div>
+        <h1>Large Language Models for Students: Learn Conversational AI as a Learning Partner, Not a Shortcut</h1>
+        <p class="subtitle">A 3-hour interactive workshop teaching students to use LLM's such as ChatGPT or Microsoft Copilot ethically for critical thinking, academic writing, and learning productivity</p>
+    </div>
+</section>
+
+<!-- Main Offer -->
+<section>
+    <div class="offer-box">
+        <h2>LLM's for Students Workshop</h2>
+        <p style="font-size: 1.1em; color: var(--muted); line-height: 1.6;">Empower your students with the skills to use AI responsibly. This hands-on workshop combines critical thinking development with academic integrity, teaching students how ChatGPT can enhance—not replace—their learning journey.</p>
+        
+        <div class="price-tag">£695</div>
+        <p class="price-details">3-hour remote workshop via Microsoft Teams | Up to 15 students</p>
+        
+        <div class="deliverables">
+            <h3>What Your Students Will Learn</h3>
+            <ul>
+                <li><strong>Ethical AI Use:</strong> Understanding when and how to use LLM's like ChatGPT appropriately in academic work</li>
+                <li><strong>Critical Thinking Skills:</strong> Using AI to challenge assumptions and strengthen arguments, not bypass thinking</li>
+                <li><strong>Effective Prompting:</strong> Crafting questions that generate useful feedback, not finished work</li>
+                <li><strong>Academic Writing Support:</strong> Getting feedback on structure and clarity while maintaining personal voice</li>
+                <li><strong>Study Productivity:</strong> Using ChatGPT for revision, summarization, and self-testing</li>
+                <li><strong>Personal Prompt Library:</strong> Building a toolkit of ethical prompts for future academic work</li>
             </ul>
         </div>
-    </section>
-
-    <!-- Main Offer -->
-    <section id="offer">
-        <div class="container">
-            <div class="highlight-box">
-                <h2>The Copilot Studio Readiness Workshop</h2>
-                <p style="font-size: 1.2em; margin: 1em 0;">A focused, one-day session designed to identify your organization's top automation opportunities using Microsoft Copilot Studio</p>
-                <div class="price">£2,950</div>
-                <p style="font-size: 0.9em; margin: 1em 0; opacity: 0.9;">€3,450 / $3,700 (approximate)</p>
-                
-                <div class="deliverables">
-                   <h3>You'll Walk Away With:</h3>
-                    <ul>
-                        <li><strong>Top Automation Opportunities:</strong> See exactly where AI can make the biggest impact</li>
-                        <li><strong>Quick-Start Blueprint:</strong> A simple plan to launch your first automation project</li>
-                        <li><strong>Next Steps Checklist:</strong> Clear actions to start making progress immediately</li>
-                    </ul>
-                </div>
-                
-                <a href="mailto:info@splicera.com?subject=Copilot%20Readiness%20Workshop%20Booking" class="cta-button">✉️ Talk to us.</a>
-                <p style="font-size: 0.9em; margin-top: 1.5em; opacity: 0.9;">Up to 8 participants | Remote delivery worldwide | Book 7+ days in advance</p>
-            </div>
+        
+        <div style="text-align: center;">
+            <a href="mailto:info@splicera.com?subject=ChatGPT%20for%20Students%20Workshop%20Booking" class="cta-button">📧 Book This Workshop</a>
+            <p style="margin-top: 1.5em; color: var(--muted); font-size: 0.95em;">Delivered remotely worldwide | Interactive labs included | Book 7+ days in advance</p>
         </div>
-    </section>
+    </div>
+</section>
 
-<!-- Features -->
-    <section id="features">
-        <div class="container">
-            <header>
-                <h2>Explore our other services at <strong>SPLICERA.</strong></h2>
-            </header>
-            <div class="row aln-center">
-                <div class="col-4 col-6-medium col-12-small">
-                    <section>
-                        <a href="#copilot" class="image featured"><img src="images/copilot.jpg" alt="Copilot Studio" /></a>
-                        <header><h3><a href="#copilot">Copilot Studio</a></h3></header>
-                        <p>Workshops and events designed to empower your teams with intelligent automation using Copilot Studio.</p>
-                    </section>
-                </div>
-                <div class="col-4 col-6-medium col-12-small">
-                    <section>
-                        <a href="#agentic" class="image featured"><img src="images/agentic.jpg" alt="Agentic Modelling" /></a>
-                        <header><h3><a href="#agentic">Agentic Modelling</a></h3></header>
-                        <p>Review your business processes and identify areas for automation and improvement using AI.</p>
-                    </section>
-                </div>
-                <div class="col-4 col-6-medium col-12-small">
-                    <section>
-                        <a href="#design" class="image featured"><img src="images/designled.jpg" alt="Design Led Thinking" /></a>
-                        <header><h3><a href="#design">Design Led Thinking</a></h3></header>
-                        <p>Empathy-driven workshops that align automation with real-world user needs and business goals.</p>
-                    </section>
-                </div>
-            </div>
-            
+<!-- Benefits -->
+<section class="benefits">
+    <h2>Why This Workshop Matters</h2>
+    <div class="benefits-grid">
+        <div class="benefit-card">
+            <div class="benefit-icon">🧠</div>
+            <h3>Enhances Critical Thinking</h3>
+            <p>Students learn to question, refine, and strengthen their ideas through AI dialogue—building deeper understanding rather than accepting quick answers.</p>
+        </div>
+        <div class="benefit-card">
+            <div class="benefit-icon">✍️</div>
+            <h3>Protects Academic Integrity</h3>
+            <p>Clear guidance on ethical boundaries helps students use AI responsibly, maintaining originality while getting valuable feedback on their work.</p>
+        </div>
+        <div class="benefit-card">
+            <div class="benefit-icon">⚡</div>
+            <h3>Improves Learning Efficiency</h3>
+            <p>Students discover how to use LLM's for revision, organization, and self-assessment—making study time more productive without compromising learning.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Workshop Structure -->
+<section class="structure">
+    <div class="structure-content">
+        <h2>What Happens in the Workshop</h2>
+        
+        <div class="lab-item">
+            <h4>Lab 1: Brainstorming & Idea Development</h4>
+            <p>Students practice using ChatGPT or Microsoft Copilot for early-stage thinking—exploring topics, refining questions, and structuring potential essays without letting AI do the thinking for them.</p>
         </div>
         
-    </section>
-
-    <!-- Main -->
-    <section id="main">
-    <div class="container">
-        <div class="row">
-        <div id="content" class="col-12">
-
-            <!-- Copilot Studio -->
-            <article id="copilot" class="box post">
-            <header>
-                <h2><strong>Copilot Studio:</strong>  AI Powered Workflow Acceleration</h2>
-            </header>
-            <p>Choose from two high-impact engagements, designed to unlock fast ROI through automation, co-creation, and strategic alignment. Our Copilot Studio training helps organizations across finance, healthcare, retail, and professional services implement conversational AI solutions that reduce manual workload and improve customer engagement.</p>
-
-            <section class="offering">
-                <h3>🟦 Tier 1: Copilot Readiness Workshop 
-                <span>£2,950 / €3,450 / $3,700</span>
-                </h3>
-                <p>1-day workshop for up to 8 participants. Includes Copilot Studio walkthrough, live use-case mapping, and a summary report. Perfect for teams new to AI automation or evaluating Microsoft Power Platform capabilities.</p>
-            </section>
-
-            <section class="offering">
-                <h3>🟨 Tier 2: AI Workflow Sprint 
-                <span>£5,950 / €6,950 / $7,450</span>
-                </h3>
-                <p>A 2-day immersive sprint to build a working prototype using Copilot Studio. Includes live discovery, hands-on co-building, and a roadmap for scaling. Ideal for teams with a clear pain point or opportunity to test. Walk away with a functional automation solution and implementation strategy.</p>
-            </section>
-            </article>
-
-            <!-- Call to Action -->
-            <div class="book-button">
-                <p></p>
-            <a href="mailto:info@splicera.com?subject=Copilot%20Readiness%20Workshop%20Booking" class="cta-button">✉️ Let’s explore possibilities</a>
-            </div>
-
-            <!-- Agentic Modelling -->
-            <article id="agentic" class="box post">
-            <header>
-                <h2><strong>Agentic Modelling:</strong> Automation by Design</h2>
-            </header>
-            <p>Our agentic modelling services help enterprises map complex business processes and identify strategic automation opportunities. Through comprehensive assessment and planning, we develop customized roadmaps that align AI implementation with your organizational goals, compliance requirements, and existing technology infrastructure.</p>
-
-            <section class="offering">
-                <h3>📋 Tier 1: Process Intelligence Review 
-                <span>£14,950–£19,950 / €17,500–€23,350 / $18,700–$25,000</span>
-                </h3>
-                <p>2–3 week engagement with in-depth workshops, process mapping, and automation assessments. Ideal for medium to large teams initiating enterprise-scale automation efforts. Includes stakeholder interviews, workflow analysis, and prioritized automation recommendations with estimated ROI calculations.</p>
-            </section>
-
-            <section class="offering">
-                <h3>⚙️ Tier 2: Enterprise Automation Roadmap 
-                <span>£45,000–£55,000 / €52,500–€64,000 / $56,250–$68,750</span>
-                </h3>
-                <p>2–3 month engagement delivering a comprehensive automation strategy, ROI justification, and executive-ready planning documents. Tailored for enterprise deployment, aligned with internal CoE or transformation teams. Includes governance frameworks, change management strategies, training programs, and multi-phase implementation timelines.</p>
-            </section>
-            </article>
-
-            <!-- Call to Action -->
-            <div class="book-button">
-                <p></p>
-            <a href="mailto:info@splicera.com?subject=Copilot%20Readiness%20Workshop%20Booking" class="cta-button">✉️ See what we can do together</a>
-            </div>
-
-            <!-- Design Led Thinking -->
-            <article id="design" class="box post">
-            <header>
-                <h2><strong>Design Led Thinking:</strong> Human-Centered Automation</h2>
-            </header>
-            <p>Successful automation isn't just about technology—it's about people. Our design-led approach ensures that AI solutions enhance employee experience and customer satisfaction. Through empathy mapping, user journey analysis, and collaborative ideation, we help you identify automation opportunities that your teams will actually embrace and use.</p>
-
-            <section class="offering">
-                <h3>🎨 Tier 1: Ideation Workshop 
-                <span>£2,950 / €3,450 / $3,700</span>
-                </h3>
-                <p>1-day workshop to identify and prioritize automation ideas from a user-centered lens. Includes design thinking exercises, persona development, journey mapping, and a prioritized backlog of automation opportunities ranked by user impact and implementation feasibility.</p>
-            </section>
-            </article>
-
-            <!-- Call to Action -->
-            <div class="book-button">
-                <p></p>
-            <a href="mailto:info@splicera.com?subject=Copilot%20Readiness%20Workshop%20Booking" class="cta-button">✉️ Make It Happen</a>
-            </div>
-
-            <!-- FAQ Section -->
-            <section id="faq" class="faq-section">
-                <div class="container">
-                    <header style="text-align: center; margin-bottom: 2em;">
-                        <h2>Frequently Asked Questions</h2>
-                        <p>Everything you need to know about SPLICERA's training and consulting services</p>
-                    </header>
-
-                    <div class="faq-item">
-                        <h4>About Splicera</h4>
-                        <p>Splicera was founded by a former Microsoft Director of AI Business Solutions and Dynamics 365, with over 25 years of experience in consulting and enterprise technology. We specialize in AI-driven solutions, Dynamics 365, Power Platform, and Copilot Studio, helping organizations turn complex strategies into actionable results. Through innovative development and thought leadership, we deliver measurable impact and transformative business programs.</p>
-                    </div>
-                    
-                    <div class="faq-item">
-                        <h4>What is Microsoft Copilot Studio?</h4>
-                        <p>Microsoft Copilot Studio is a low-code platform for building conversational AI agents and automating workflows. It enables businesses to create intelligent chatbots, automate repetitive tasks, and integrate AI capabilities across Microsoft 365, Teams, and other enterprise systems without extensive programming knowledge.</p>
-                    </div>
-
-                    <div class="faq-item">
-                        <h4>Who should attend SPLICERA workshops?</h4>
-                        <p>Our workshops are designed for business analysts, IT professionals, operations managers, digital transformation leads, and anyone responsible for process improvement or automation initiatives. No prior AI or coding experience is required for Tier 1 workshops, though basic familiarity with business processes is helpful.</p>
-                    </div>
-
-                    <div class="faq-item">
-                        <h4>Are workshops delivered remotely or in-person?</h4>
-                        <p>All workshops are delivered remotely by default, serving clients worldwide. In-person delivery is available upon request and may incur additional travel and accommodation costs. Remote sessions are conducted via your preferred virtual meeting platform (Teams, Zoom, etc.).</p>
-                    </div>
-
-                    <div class="faq-item">
-                        <h4>What technology do we need to participate?</h4>
-                        <p>Participants need a computer with internet access, a virtual meeting platform (Microsoft Teams, Zoom, or similar), and ideally access to Microsoft Power Platform or Copilot Studio for hands-on workshops. We'll provide detailed technical requirements upon booking.</p>
-                    </div>
-
-                    <div class="faq-item">
-                        <h4>How quickly can we see ROI from automation?</h4>
-                        <p>Many clients see initial time savings within weeks of implementing their first Copilot Studio agent. Comprehensive automation initiatives typically show measurable ROI within 3-6 months, depending on scope and complexity. Our workshops include ROI calculation frameworks to help you track and measure success.</p>
-                    </div>
-
-                    <div class="faq-item">
-                        <h4>What happens after the workshop?</h4>
-                        <p>You'll receive comprehensive documentation including workshop summaries, implementation roadmaps, and recommended next steps. Follow-up support options are available, and we can discuss ongoing consulting or additional training as your automation journey progresses.</p>
-                    </div>
-
-                    <div class="faq-item">
-                        <h4>Can workshops be customized for our industry?</h4>
-                        <p>Absolutely. We tailor all workshops to your specific industry context, whether you're in finance, healthcare, retail, manufacturing, or professional services. During pre-workshop planning calls, we gather information about your unique challenges and customize examples and use cases accordingly.</p>
-                    </div>
-
-                    <div class="faq-item">
-                        <h4>What's your cancellation policy?</h4>
-                        <p>Workshops must be booked at least 7 days in advance. Cancellations made more than 72 hours before the scheduled workshop receive a full refund. Cancellations within 72 hours may be subject to a 50% fee. We're happy to reschedule at no additional charge when possible.</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Currency Disclaimer -->
-            <p style="font-size: 0.9rem; color: #777; margin-top: 2rem;">
-            *All prices are billed in GBP. EUR and USD amounts are approximate and may vary depending on exchange rates at the time of invoicing.
-            </p>
-
+        <div class="lab-item">
+            <h4>Lab 2: Refining Your Argument</h4>
+            <p>Learn to use ChatGPT or Microsoft Copilot as a critical thinking partner to test logic, identify weaknesses, and strengthen reasoning while maintaining intellectual ownership.</p>
         </div>
+        
+        <div class="lab-item">
+            <h4>Lab 3: Feedback & Revision</h4>
+            <p>Students discover how to get actionable feedback on clarity, flow, and structure without losing their personal voice or accepting AI rewrites automatically.</p>
+        </div>
+        
+        <div class="lab-item">
+            <h4>Lab 4: Study & Productivity Support</h4>
+            <p>Explore ChatGPT for active learning—summarizing readings, creating self-test questions, and designing study plans that reinforce understanding.</p>
+        </div>
+        
+        <div class="lab-item">
+            <h4>Lab 5: Building Your Prompt Library</h4>
+            <p>Students create a personalized collection of ethical prompts they can use throughout their academic journey, categorized by task and learning stage.</p>
+        </div>
+        
+        <p style="text-align: center; margin-top: 2em; font-size: 1.1em;">All labs include reflection questions, group discussion, and real-time practice with immediate facilitator guidance.</p>
+    </div>
+</section>
+
+<!-- Enterprise Services -->
+<section class="enterprise" id="enterprise">
+    <div class="enterprise-header">
+        <h2>Enterprise AI Solutions</h2>
+        <p>Advanced automation and AI strategy services for organizations</p>
+    </div>
+    
+    <div class="service-grid">
+        <div class="service-card">
+            <img src="images/copilot.jpg" alt="Copilot Studio" />
+            <div class="service-content">
+                <h3>Copilot Studio</h3>
+                <p>Workshops and AI workflow acceleration for teams seeking intelligent automation using Microsoft Copilot Studio. From readiness workshops (£2,950) to full implementation sprints.</p>
+            </div>
+        </div>
+        
+        <div class="service-card">
+            <img src="images/agentic.jpg" alt="Agentic Modelling" />
+            <div class="service-content">
+                <h3>Agentic Modelling</h3>
+                <p>Enterprise automation strategy and process intelligence reviews. Comprehensive roadmaps for organizations ready to scale AI adoption across departments.</p>
+            </div>
+        </div>
+        
+        <div class="service-card">
+            <img src="images/designled.jpg" alt="Design Led Thinking" />
+            <div class="service-content">
+                <h3>Design Led Thinking</h3>
+                <p>Human-centered automation workshops using empathy mapping and user journey analysis to identify AI opportunities your teams will actually embrace.</p>
+            </div>
         </div>
     </div>
-    </section>
+    
+    <div style="text-align: center; margin-top: 3em;">
+        <a href="enterprise.html" class="cta-button">Learn About Enterprise Solutions</a>
+    </div>
+</section>
 
-    <!-- Currency Disclaimer -->
-    <div class="container">
-        <p style="font-size: 0.9rem; color: #777; margin-top: 2rem; text-align: center;">
-            *All prices are billed in GBP. EUR and USD amounts are approximate and may vary depending on exchange rates at the time of invoicing.
+<!-- Footer -->
+<footer>
+    <div>
+        <p><strong>SPLICERA</strong> — Learning Solutions & AI-Driven Transformation</p>
+        <p style="margin-top: 1.5em;">
+            All workshops delivered remotely via Microsoft Teams<br>
+            In-person delivery available upon request (additional costs apply)
         </p>
+        <p style="margin-top: 2em;">
+            United Kingdom<br>
+            <a href="mailto:info@splicera.com">info@splicera.com</a><br>
+            <a href="http://www.splicera.com">splicera.com</a>
+        </p>
+        <p style="font-size: 0.85em; margin-top: 2em; color: #999;">
+            Standard pricing includes up to 25 participants • Book at least 7 days in advance • 72-hour cancellation policy applies
+        </p>
+        <p style="font-size: 0.8em; margin-top: 1.5em;">&copy; 2025 SPLICERA. All rights reserved.</p>
     </div>
+</footer>
 
-    <!-- Footer -->
-    <footer style="background:#222; color:#ccc; padding: 2em 0; text-align:center;">
-        <div class="container">
-            <p><strong>SPLICERA</strong> — Intelligent Automation & AI-Driven Transformation</p>
-            <p>
-                All workshops are delivered remotely and globally. Clients are responsible for providing the virtual meeting platform of their choice. In-person workshops available upon request (additional costs apply).
-            </p>
-            <p style="font-size: 0.9rem; color: #999; margin-top: 1.5rem;">
-                <strong>Workshop Terms:</strong><br />
-                Standard pricing includes up to 8 participants • Book at least 7 days in advance • 72-hour cancellation policy applies
-            </p>
-            <p style="margin-top: 2em;">
-                United Kingdom<br>
-                <a href="mailto:info@splicera.com" style="color:#ccc;">info@splicera.com</a><br>
-                <a href="#" style="color:#ccc;">LinkedIn</a> | <a href="http://www.splicera.com" style="color:#ccc;">splicera.com</a>
-            </p>
-            <p style="font-size: 0.8em;">&copy; 2025 SPLICERA Training Ltd. All rights reserved.</p>
-        </div>
-    </footer>
-
-</div>
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/jquery.dropotron.min.js"></script>
-<script src="assets/js/browser.min.js"></script>
-<script src="assets/js/breakpoints.min.js"></script>
-<parameter>
-</invoke>
+</body>
+</html>

@@ -1,0 +1,475 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://splicera.github.io/enterprise.html" />
+
+    <title>SPLICERA | Enterprise AI Solutions - Copilot Studio & Automation Strategy</title>
+    <meta name="description" content="Expert AI automation and Copilot Studio services for enterprises. From readiness workshops to enterprise-scale automation roadmaps. Led by former Microsoft AI Director." />
+    <meta name="author" content="SPLICERA" />
+    <meta name="keywords" content="Copilot Studio, AI Automation, Power Platform, Microsoft Copilot Training, Intelligent Workflows, SPLICERA, Digital Transformation, AI Consulting, Enterprise Automation" />
+
+    <link rel="icon" type="image/png" href="/favicon.ico" sizes="96x96" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <style>
+        :root {
+            --blue: #0066cc;
+            --navy: #0a2540;
+            --muted: #6c7076;
+            --card: #ffffff;
+            --bg: #f6f8fb;
+            --radius: 10px;
+            font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            background: var(--bg);
+            color: #333;
+        }
+        
+        /* Header Styles */
+        header {
+            background: #fff;
+            border-bottom: 1px solid #e6e9ef;
+            padding: 0;
+        }
+        
+        .topbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 0;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
+        
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .brand img {
+            height: 50px;
+            width: auto;
+        }
+
+        .brand-text h2 {
+            margin: 0;
+            font-size: 1.5rem;
+            color: var(--navy);
+        }
+
+        .brand-text .tagline {
+            margin: 0;
+            font-size: 0.9rem;
+            color: var(--muted);
+            line-height: 1.2;
+        }
+        
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 16px;
+            align-items: center;
+        }
+        
+        header nav a {
+            color: #111;
+            text-decoration: none;
+            font-size: 0.95rem;
+        }
+        
+        header nav a.button {
+            background: var(--blue);
+            color: #fff;
+            padding: 10px 18px;
+            border-radius: 8px;
+            font-weight: 600;
+        }
+        
+        header nav a.button:hover {
+            background: #0052a3;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--navy) 0%, #1a3a5a 100%);
+            color: white;
+            padding: 4em 1.5em;
+            text-align: center;
+        }
+        
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .hero h1 {
+            font-size: 2.5em;
+            margin: 0 0 0.5em 0;
+            line-height: 1.2;
+            color: #ffffff !important;
+        }
+        
+        .hero p {
+            font-size: 1.2em;
+            opacity: 0.95;
+            line-height: 1.6;
+        }
+        
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5em;
+        }
+        
+        /* Service Section */
+        .service-section {
+            padding: 4em 0;
+            border-bottom: 1px solid #e6e9ef;
+        }
+        
+        .service-section h2 {
+            color: var(--navy);
+            font-size: 2.2em;
+            margin-bottom: 0.5em;
+        }
+        
+        .service-intro {
+            color: var(--muted);
+            font-size: 1.1em;
+            line-height: 1.7;
+            margin-bottom: 3em;
+        }
+        
+        /* Offering Cards */
+        .offering {
+            background: white;
+            border-radius: 12px;
+            padding: 2.5em;
+            margin-bottom: 2em;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            border-left: 5px solid var(--blue);
+        }
+        
+        .offering h3 {
+            color: var(--navy);
+            font-size: 1.5em;
+            margin-top: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1em;
+        }
+        
+        .offering h3 span {
+            font-size: 0.7em;
+            color: var(--blue);
+            font-weight: bold;
+        }
+        
+        .offering p {
+            color: var(--muted);
+            line-height: 1.7;
+            margin-bottom: 0;
+        }
+        
+        /* CTA Button */
+        .cta-button {
+            display: inline-block;
+            background: var(--blue);
+            color: white;
+            padding: 1em 2.5em;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            margin: 2em 0;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(0,102,204,0.3);
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,102,204,0.5);
+            background: #0052a3;
+        }
+        
+        .book-button {
+            text-align: center;
+            padding: 3em 0;
+        }
+        
+        /* FAQ Section */
+        .faq-section {
+            padding: 4em 0;
+            background: white;
+        }
+        
+        .faq-item {
+            background: #f9f9f9;
+            padding: 1.5em;
+            margin-bottom: 1em;
+            border-radius: 8px;
+            border-left: 4px solid var(--blue);
+        }
+        
+        .faq-item h4 {
+            margin-top: 0;
+            color: var(--blue);
+            font-size: 1.1em;
+        }
+        
+        .faq-item p {
+            color: var(--muted);
+            line-height: 1.7;
+            margin-bottom: 0;
+        }
+        
+        /* Footer */
+        footer {
+            background: #222;
+            color: #ccc;
+            padding: 3em 1.5em;
+            text-align: center;
+        }
+        
+        footer a {
+            color: #ccc;
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            color: white;
+        }
+        
+        .disclaimer {
+            font-size: 0.9rem;
+            color: #777;
+            text-align: center;
+            margin: 2rem 0;
+        }
+        
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .topbar {
+                flex-direction: column;
+                gap: 1rem;
+                align-items: flex-start;
+            }
+            
+            header nav ul {
+                flex-wrap: wrap;
+            }
+            
+            .hero h1 {
+                font-size: 1.8em;
+            }
+            
+            .service-section h2 {
+                font-size: 1.7em;
+            }
+            
+            .offering h3 {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <div class="topbar">
+        <div class="brand">
+            <img src="images/logo1.svg" alt="SPLICERA logo" />
+            <div class="brand-text">
+                <h2><strong>SPLICERA</strong></h2>
+                <div class="tagline">Learning Solutions</div>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="mailto:info@splicera.com?subject=Enterprise%20Inquiry" class="button">Get in Touch</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Enterprise AI Solutions</h1>
+        <p>Transform your organization with intelligent automation, strategic AI implementation, and human-centered design. From quick-win workshops to enterprise-scale transformation.</p>
+    </div>
+</section>
+
+<!-- Main Content -->
+<div class="container">
+
+    <!-- Copilot Studio -->
+    <section class="service-section" id="copilot">
+        <h2><strong>Copilot Studio:</strong> AI Powered Workflow Acceleration</h2>
+        <p class="service-intro">Choose from two high-impact engagements, designed to unlock fast ROI through automation, co-creation, and strategic alignment. Our Copilot Studio training helps organizations across finance, healthcare, retail, and professional services implement conversational AI solutions that reduce manual workload and improve customer engagement.</p>
+
+        <div class="offering">
+            <h3>
+                🟦 Tier 1: Copilot Readiness Workshop 
+                <span>£2,950 / €3,450 / $3,700</span>
+            </h3>
+            <p>1-day workshop for up to 8 participants. Includes Copilot Studio walkthrough, live use-case mapping, and a summary report. Perfect for teams new to AI automation or evaluating Microsoft Power Platform capabilities.</p>
+        </div>
+
+        <div class="offering">
+            <h3>
+                🟨 Tier 2: AI Workflow Sprint 
+                <span>£5,950 / €6,950 / $7,450</span>
+            </h3>
+            <p>A 2-day immersive sprint to build a working prototype using Copilot Studio. Includes live discovery, hands-on co-building, and a roadmap for scaling. Ideal for teams with a clear pain point or opportunity to test. Walk away with a functional automation solution and implementation strategy.</p>
+        </div>
+    </section>
+
+    <div class="book-button">
+        <a href="mailto:info@splicera.com?subject=Copilot%20Studio%20Inquiry" class="cta-button">✉️ Let's explore possibilities</a>
+    </div>
+
+    <!-- Agentic Modelling -->
+    <section class="service-section" id="agentic">
+        <h2><strong>Agentic Modelling:</strong> Automation by Design</h2>
+        <p class="service-intro">Our agentic modelling services help enterprises map complex business processes and identify strategic automation opportunities. Through comprehensive assessment and planning, we develop customized roadmaps that align AI implementation with your organizational goals, compliance requirements, and existing technology infrastructure.</p>
+
+        <div class="offering">
+            <h3>
+                📋 Tier 1: Process Intelligence Review 
+                <span>£14,950–£19,950 / €17,500–€23,350 / $18,700–$25,000</span>
+            </h3>
+            <p>2–3 week engagement with in-depth workshops, process mapping, and automation assessments. Ideal for medium to large teams initiating enterprise-scale automation efforts. Includes stakeholder interviews, workflow analysis, and prioritized automation recommendations with estimated ROI calculations.</p>
+        </div>
+
+        <div class="offering">
+            <h3>
+                ⚙️ Tier 2: Enterprise Automation Roadmap 
+                <span>£45,000–£55,000 / €52,500–€64,000 / $56,250–$68,750</span>
+            </h3>
+            <p>2–3 month engagement delivering a comprehensive automation strategy, ROI justification, and executive-ready planning documents. Tailored for enterprise deployment, aligned with internal CoE or transformation teams. Includes governance frameworks, change management strategies, training programs, and multi-phase implementation timelines.</p>
+        </div>
+    </section>
+
+    <div class="book-button">
+        <a href="mailto:info@splicera.com?subject=Agentic%20Modelling%20Inquiry" class="cta-button">✉️ See what we can do together</a>
+    </div>
+
+    <!-- Design Led Thinking -->
+    <section class="service-section" id="design">
+        <h2><strong>Design Led Thinking:</strong> Human-Centered Automation</h2>
+        <p class="service-intro">Successful automation isn't just about technology—it's about people. Our design-led approach ensures that AI solutions enhance employee experience and customer satisfaction. Through empathy mapping, user journey analysis, and collaborative ideation, we help you identify automation opportunities that your teams will actually embrace and use.</p>
+
+        <div class="offering">
+            <h3>
+                🎨 Tier 1: Ideation Workshop 
+                <span>£2,950 / €3,450 / $3,700</span>
+            </h3>
+            <p>1-day workshop to identify and prioritize automation ideas from a user-centered lens. Includes design thinking exercises, persona development, journey mapping, and a prioritized backlog of automation opportunities ranked by user impact and implementation feasibility.</p>
+        </div>
+    </section>
+
+    <div class="book-button">
+        <a href="mailto:info@splicera.com?subject=Design%20Led%20Thinking%20Inquiry" class="cta-button">✉️ Make It Happen</a>
+    </div>
+
+    <!-- Currency Disclaimer -->
+    <p class="disclaimer">*All prices are billed in GBP. EUR and USD amounts are approximate and may vary depending on exchange rates at the time of invoicing.</p>
+
+</div>
+
+<!-- FAQ Section -->
+<section class="faq-section">
+    <div class="container">
+        <h2 style="text-align: center; color: var(--navy); margin-bottom: 2em;">Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+            <h4>About Splicera</h4>
+            <p>Splicera was founded by a former Microsoft Director of AI Business Solutions and Dynamics 365, with over 25 years of experience in consulting and enterprise technology. We specialize in AI-driven solutions, Dynamics 365, Power Platform, and Copilot Studio, helping organizations turn complex strategies into actionable results. Through innovative development and thought leadership, we deliver measurable impact and transformative business programs.</p>
+        </div>
+        
+        <div class="faq-item">
+            <h4>What is Microsoft Copilot Studio?</h4>
+            <p>Microsoft Copilot Studio is a low-code platform for building conversational AI agents and automating workflows. It enables businesses to create intelligent chatbots, automate repetitive tasks, and integrate AI capabilities across Microsoft 365, Teams, and other enterprise systems without extensive programming knowledge.</p>
+        </div>
+
+        <div class="faq-item">
+            <h4>Who should attend SPLICERA workshops?</h4>
+            <p>Our workshops are designed for business analysts, IT professionals, operations managers, digital transformation leads, and anyone responsible for process improvement or automation initiatives. No prior AI or coding experience is required for Tier 1 workshops, though basic familiarity with business processes is helpful.</p>
+        </div>
+
+        <div class="faq-item">
+            <h4>Are workshops delivered remotely or in-person?</h4>
+            <p>All workshops are delivered remotely by default, serving clients worldwide. In-person delivery is available upon request and may incur additional travel and accommodation costs. Remote sessions are conducted via your preferred virtual meeting platform (Teams, Zoom, etc.).</p>
+        </div>
+
+        <div class="faq-item">
+            <h4>What technology do we need to participate?</h4>
+            <p>Participants need a computer with internet access, a virtual meeting platform (Microsoft Teams, Zoom, or similar), and ideally access to Microsoft Power Platform or Copilot Studio for hands-on workshops. We'll provide detailed technical requirements upon booking.</p>
+        </div>
+
+        <div class="faq-item">
+            <h4>How quickly can we see ROI from automation?</h4>
+            <p>Many clients see initial time savings within weeks of implementing their first Copilot Studio agent. Comprehensive automation initiatives typically show measurable ROI within 3-6 months, depending on scope and complexity. Our workshops include ROI calculation frameworks to help you track and measure success.</p>
+        </div>
+
+        <div class="faq-item">
+            <h4>What happens after the workshop?</h4>
+            <p>You'll receive comprehensive documentation including workshop summaries, implementation roadmaps, and recommended next steps. Follow-up support options are available, and we can discuss ongoing consulting or additional training as your automation journey progresses.</p>
+        </div>
+
+        <div class="faq-item">
+            <h4>Can workshops be customized for our industry?</h4>
+            <p>Absolutely. We tailor all workshops to your specific industry context, whether you're in finance, healthcare, retail, manufacturing, or professional services. During pre-workshop planning calls, we gather information about your unique challenges and customize examples and use cases accordingly.</p>
+        </div>
+
+        <div class="faq-item">
+            <h4>What's your cancellation policy?</h4>
+            <p>Workshops must be booked at least 7 days in advance. Cancellations made more than 72 hours before the scheduled workshop receive a full refund. Cancellations within 72 hours may be subject to a 50% fee. We're happy to reschedule at no additional charge when possible.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div>
+        <p><strong>SPLICERA</strong> — Intelligent Automation & AI-Driven Transformation</p>
+        <p style="margin-top: 1.5em;">
+            All workshops are delivered remotely and globally. Clients are responsible for providing the virtual meeting platform of their choice. In-person workshops available upon request (additional costs apply).
+        </p>
+        <p style="font-size: 0.9rem; color: #999; margin-top: 1.5rem;">
+            <strong>Workshop Terms:</strong><br />
+            Standard pricing includes up to 8 participants • Book at least 7 days in advance • 72-hour cancellation policy applies
+        </p>
+        <p style="margin-top: 2em;">
+            United Kingdom<br>
+            <a href="mailto:info@splicera.com">info@splicera.com</a><br>
+            <a href="http://www.splicera.com">splicera.com</a>
+        </p>
+        <p style="font-size: 0.8em; margin-top: 1.5em;">&copy; 2025 SPLICERA. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>
