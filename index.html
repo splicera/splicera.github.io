@@ -397,6 +397,31 @@
         footer a:hover {
             color: white;
         }
+
+        .llm-icons {
+        margin-top: 20px;
+        display: flex;
+        gap: 40px;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        }
+
+        .llm-icon-block {
+        text-align: center;
+        flex: 1 1 100px;
+        }
+
+        .llm-icon {
+        height: 96px;
+        max-width: 100%;
+        }
+
+        .llm-label {
+        color: white;
+        font-weight: bold;
+        margin-top: 8px;
+        }
         
         /* Mobile Responsive */
         @media (max-width: 768px) {
@@ -425,6 +450,20 @@
             
             .price-tag {
                 font-size: 2.2em;
+            }
+
+            .llm-icons {
+            gap: 20px;
+            flex-direction: column;
+            align-items: center;
+            }
+
+            .llm-icon {
+                height: 48px;
+            }
+
+            .llm-label {
+                font-size: 0.9em;
             }
         }
     </style>
@@ -504,7 +543,7 @@
         </div>
         
         <div style="text-align: center;">
-            <a href="mailto:info@splicera.com?subject=ChatGPT%20for%20Students%20Workshop%20Booking" class="cta-button">📧 Book This Workshop</a>
+            <a href="mailto:info@splicera.com?subject=ChatGPT%20for%20Students%20Workshop%20Booking" class="cta-button">📧 Talk to Us</a>
             <p style="margin-top: 1.5em; color: var(--muted); font-size: 0.95em;">Delivered remotely worldwide | Interactive labs included | Book 7+ days in advance</p>
         </div>
     </div>
