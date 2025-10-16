@@ -468,10 +468,11 @@
             }
 
             .llm-icons {
-                gap: 20px;
-                flex-direction: column;
-                align-items: center;
-            }
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 12px;
+}
 
             .llm-icon {
                 width: 48px;
@@ -527,24 +528,24 @@
 </p>
     </div>
     <!-- Icon Block -->
-    <div style="margin-top: 20px; display: flex; gap: 40px; justify-content: center; align-items: center;">
-      <div style="text-align: center;">
-        <img src="/images/icons8-chatgpt-96.png" alt="ChatGPT Icon" style="height: 96px;" class="llm-icon">
-        <div style="color: white; font-weight: bold; margin-top: 8px;">ChatGPT</div>
-      </div>
-      <div style="text-align: center;">
-        <img src="/images/icons8-microsoft-copilot-96.png" alt="Copilot Icon" style="height: 96px;" class="llm-icon">
-        <div style="color: white; font-weight: bold; margin-top: 8px;">Microsoft Copilot</div>
-      </div>
-      <div style="text-align: center;">
-        <img src="/images/icons8-claude-96.png" alt="Claude Icon" style="height: 96px;" class="llm-icon">
-        <div style="color: white; font-weight: bold; margin-top: 8px;">Claude</div>
-      </div>
-      <div style="text-align: center;">
-        <img src="/images/icons8-gemini-ai-96.png" alt="Gemini Ai Icon" style="height: 96px;" class="llm-icon">
-        <div style="color: white; font-weight: bold; margin-top: 8px;">Gemini Ai</div>
-      </div>
-    </div>
+<div class="llm-icons">
+  <div class="llm-icon-block">
+    <img src="/images/icons8-chatgpt-96.png" alt="ChatGPT Icon" class="llm-icon">
+    <div class="llm-label">ChatGPT</div>
+  </div>
+  <div class="llm-icon-block">
+    <img src="/images/icons8-microsoft-copilot-96.png" alt="Copilot Icon" class="llm-icon">
+    <div class="llm-label">Microsoft Copilot</div>
+  </div>
+  <div class="llm-icon-block">
+    <img src="/images/icons8-claude-96.png" alt="Claude Icon" class="llm-icon">
+    <div class="llm-label">Claude</div>
+  </div>
+  <div class="llm-icon-block">
+    <img src="/images/icons8-gemini-ai-96.png" alt="Gemini Ai Icon" class="llm-icon">
+    <div class="llm-label">Gemini Ai</div>
+  </div>
+</div>
 </section>
 
 <!-- Main Offer -->
