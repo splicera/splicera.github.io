@@ -509,6 +509,39 @@
     justify-content: center;
     }
 
+    .page-toggle {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  background: transparent;
+  flex-wrap: wrap; /* allows stacking on mobile */
+}
+
+.page-toggle button {
+  background-color: white !important;
+  color: var(--blue) !important;
+  border: 2px solid var(--blue) !important;
+  font-weight: 600;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 120px;
+  text-align: center;
+}
+
+.page-toggle button:hover {
+  background-color: var(--blue);
+  color: white;
+}
+
+.page-toggle .active {
+  background-color: var(--blue) !important;
+  color: white !important;
+  border: 2px solid var(--blue) !important;
+}
+
     /* Mobile Responsive */
     @media (max-width: 768px) {
     .topbar {
@@ -516,6 +549,19 @@
         gap: 1rem;
         align-items: flex-start;
     }
+
+    .page-toggle {
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .page-toggle button {
+    flex: 1 1 auto;
+    min-width: 120px;
+    text-align: center;
+  }
 
     .brand {
     flex-direction: row;
@@ -587,15 +633,13 @@
             <img src="images/logo1.svg" alt="SPLICERA logo" />
             <div class="brand-text">
                 <h2><strong>SPLICERA</strong></h2>
-                <div class="tagline">Learning Solutions</div>
-            </div>
+                <div class="tagline">AI Enablement & Transformation</div>
+            </div>     
         </div>
-        <nav>
-            <ul>
-                
-                <li><a href="enterprise.html">Enterprise Services</a></li>
-            </ul>
-        </nav>
+        <div class="page-toggle">
+            <button onclick="location.href='index.html'" class="active">Education</button>
+            <button onclick="location.href='enterprise.html'">Enterprise</button>
+        </div>
     </div>
 </header>
 
