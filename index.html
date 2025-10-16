@@ -399,30 +399,34 @@
         }
 
         .llm-icons {
-        margin-top: 20px;
-        display: flex;
-        gap: 40px;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
+            margin-top: 20px;
+            display: flex;
+            gap: 40px;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
         }
 
         .llm-icon-block {
-        text-align: center;
-        flex: 1 1 100px;
+            text-align: center;
+            flex: 1 1 100px;
         }
 
         .llm-icon {
-        height: 96px;
-        max-width: 100%;
+            width: 96px;
+            height: auto;
+            max-width: 100%;
+            object-fit: contain;
+            aspect-ratio: 1 / 1;
+            transition: width 0.3s ease;
         }
 
         .llm-label {
-        color: white;
-        font-weight: bold;
-        margin-top: 8px;
+            color: white;
+            font-weight: bold;
+            margin-top: 8px;
         }
-        
+
         /* Mobile Responsive */
         @media (max-width: 768px) {
             .topbar {
@@ -430,36 +434,36 @@
                 gap: 1rem;
                 align-items: flex-start;
             }
-            
+
             header nav ul {
                 flex-wrap: wrap;
             }
-            
+
             .hero h1 {
                 font-size: 1.8em;
             }
-            
+
             .hero .subtitle {
                 font-size: 1.1em;
             }
-            
+
             .offer-box {
                 margin: -2em 1em 2em 1em;
                 padding: 1.5em;
             }
-            
+
             .price-tag {
                 font-size: 2.2em;
             }
 
             .llm-icons {
-            gap: 20px;
-            flex-direction: column;
-            align-items: center;
+                gap: 20px;
+                flex-direction: column;
+                align-items: center;
             }
 
             .llm-icon {
-                height: 48px;
+                width: 48px;
             }
 
             .llm-label {
