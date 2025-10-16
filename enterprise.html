@@ -107,7 +107,7 @@
         
         /* Hero Section */
         .hero {
-            background: linear-gradient(135deg, var(--navy) 0%, #1a3a5a 100%);
+            background: linear-gradient(135deg, #0066cc 0%, #0052a3 100%);
             color: white;
             padding: 4em 1.5em;
             text-align: center;
@@ -125,10 +125,111 @@
             color: #ffffff !important;
         }
         
-        .hero p {
-            font-size: 1.2em;
+        .hero .subtitle {
+            font-size: 1.3em;
+            margin-bottom: 2em;
             opacity: 0.95;
-            line-height: 1.6;
+            line-height: 1.4;
+        }
+        
+        .hero-badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            padding: 0.5em 1em;
+            border-radius: 20px;
+            font-size: 0.9em;
+            margin-bottom: 1.5em;
+        }
+        
+        /* Main Offer Box */
+        .offer-box {
+            background: white;
+            border-radius: 12px;
+            padding: 2.5em;
+            margin: -3em auto 3em auto;
+            max-width: 800px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+            position: relative;
+        }
+        
+        .offer-box h2 {
+            color: var(--navy);
+            margin-top: 0;
+            font-size: 1.8em;
+        }
+        
+        .price-tag {
+            font-size: 3em;
+            font-weight: bold;
+            color: var(--blue);
+            margin: 0.5em 0;
+        }
+        
+        .price-details {
+            color: var(--muted);
+            font-size: 0.95em;
+            margin-bottom: 2em;
+        }
+        
+        .deliverables {
+            background: #f9f9f9;
+            border-radius: 8px;
+            padding: 2em;
+            margin: 2em 0;
+            text-align: left;
+        }
+        
+        .deliverables h3 {
+            color: var(--blue);
+            margin-top: 0;
+            text-align: center;
+            font-size: 1.3em;
+        }
+        
+        .deliverables ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .deliverables li {
+            padding: 1em 0;
+            border-bottom: 1px solid #e0e0e0;
+            position: relative;
+            padding-left: 2.5em;
+        }
+        
+        .deliverables li:before {
+            content: "✓";
+            color: var(--accent);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+            font-size: 1.5em;
+        }
+        
+        .deliverables li:last-child {
+            border-bottom: none;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: var(--blue);
+            color: white;
+            padding: 1em 3em;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-top: 1em;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(0,102,204,0.3);
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,102,204,0.5);
+            background: #0052a3;
         }
         
         /* Container */
@@ -317,7 +418,33 @@
 <section class="hero">
     <div class="hero-content">
         <h1>Enterprise AI Solutions</h1>
-        <p>Transform your organization with intelligent automation, strategic AI implementation, and human-centered design. From quick-win workshops to enterprise-scale transformation.</p>
+        <p class="subtitle">Transform your organization with intelligent automation, strategic AI implementation, and human-centered design. From quick-win workshops to enterprise-scale transformation.</p>
+    </div>
+</section>
+
+<!-- Main Offer -->
+<section>
+    <div class="offer-box">
+        <h2>The Copilot rediness workshop</h2>
+        <p style="font-size: 1.1em; color: var(--muted); line-height: 1.6;">A focused, one-day session designed to identify your organization's top automation opportunities using Microsoft Copilot Studio</p>
+        
+        <div class="price-tag">£2,950</div>
+        <p class="price-details">€3,450 / $3,700 (approximate)</p>
+        
+        <div class="deliverables">
+            <h3>YOU'LL WALK AWAY WITH:</h3>
+            <ul>
+                <li><strong>Top Automation Opportunities:</strong> See exactly where AI can make the biggest impact</li>
+                <li><strong>Quick-Start Blueprint:</strong> A simple plan to launch your first automation project</li>
+                <li><strong>Next Steps Checklist:</strong> Clear actions to start making progress immediately</li>
+                
+            </ul>
+        </div>
+        
+        <div style="text-align: center;">
+            <a href="mailto:info@splicera.com?subject=ChatGPT%20for%20Students%20Workshop%20Booking" class="cta-button">📧 Book This Workshop</a>
+            <p style="margin-top: 1.5em; color: var(--muted); font-size: 0.95em;">Delivered remotely worldwide | Book 14+ days in advance</p>
+        </div>
     </div>
 </section>
 
@@ -454,18 +581,18 @@
 <!-- Footer -->
 <footer>
     <div>
-        <p><strong>SPLICERA</strong> — Intelligent Automation & AI-Driven Transformation</p>
+        <p><strong>SPLICERA</strong> — Learning Solutions & AI-Driven Transformation</p>
         <p style="margin-top: 1.5em;">
-            All workshops are delivered remotely and globally. Clients are responsible for providing the virtual meeting platform of their choice. In-person workshops available upon request (additional costs apply).
-        </p>
-        <p style="font-size: 0.9rem; color: #999; margin-top: 1.5rem;">
-            <strong>Workshop Terms:</strong><br />
-            Standard pricing includes up to 8 participants • Book at least 7 days in advance • 72-hour cancellation policy applies
+            All workshops delivered remotely via Microsoft Teams<br>
+            In-person delivery available upon request (additional costs apply)
         </p>
         <p style="margin-top: 2em;">
             United Kingdom<br>
             <a href="mailto:info@splicera.com">info@splicera.com</a><br>
             <a href="http://www.splicera.com">splicera.com</a>
+        </p>
+        <p style="font-size: 0.85em; margin-top: 2em; color: #999;">
+            Standard pricing includes up to 10 participants • Book at least 7 days in advance • 72-hour cancellation policy applies
         </p>
         <p style="font-size: 0.8em; margin-top: 1.5em;">&copy; 2025 SPLICERA. All rights reserved.</p>
     </div>
